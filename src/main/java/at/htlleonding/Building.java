@@ -41,7 +41,7 @@ public class Building {
     }
 
     public int getNumberOfResidents() {
-        return 0;
+        return residents.size();
     }
 
     public Integer getId() {
