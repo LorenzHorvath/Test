@@ -32,6 +32,10 @@ public class Building {
         Collections.addAll(residents, initialResidents);
     }
 
+    public void addResident(String resident) {
+
+    }
+
     public Integer getId() {
         return id;
     }
