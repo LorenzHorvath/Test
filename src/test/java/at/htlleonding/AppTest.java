@@ -15,7 +15,7 @@ public class AppTest
     @Test
     public void shouldHaveAnId()
     {
-        Building building = new Building();
+        Building building = new Building(1);
         assertNotNull(building.getId());
     }
 }

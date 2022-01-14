@@ -13,8 +13,8 @@ package at.htlleonding;
 public class Building {
     Integer id;
 
-    public Building() {
-
+    public Building(Integer id) {
+        this.id = id;
     }
 
     public Integer getId() {
