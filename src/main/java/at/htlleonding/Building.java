@@ -10,25 +10,25 @@
  */
 package at.htlleonding;
 
+import java.util.LinkedList;
 import java.util.List;
 
 public class Building {
     Integer id;
     String initialResident;
     String[] initialResidents;
-    List<String> residents;
+    public List<String> residents = new LinkedList<>();
 
     public Building(Integer id, String initialResident) {
         this.id = id;
         this.initialResident = initialResident;
+        residents.add(initialResident);
     }
 
     public Building(Integer id, String[] initialResidents) {
         this.id = id;
         this.initialResidents = initialResidents;
     }
-
-
 
     public Integer getId() {
         return id;
