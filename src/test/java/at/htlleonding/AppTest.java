@@ -1,6 +1,6 @@
 package at.htlleonding;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 import org.junit.Test;
 
@@ -13,8 +13,9 @@ public class AppTest
      * Rigorous Test :-)
      */
     @Test
-    public void shouldAnswerWithTrue()
+    public void shouldHaveAnId()
     {
-        assertTrue( true );
+        Building building = new Building();
+        assertNotNull(building.getId());
     }
 }
