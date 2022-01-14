@@ -32,4 +32,18 @@ public class AppTest
         Building building = new Building(1, new String[]{"John Smith", "Mary Smith"});
         assertNotNull(building.getInitialResidents());
     }
+
+    @Test
+    public void shouldAddAResident()
+    {
+        Building building = new Building(1, new String[]{"John Smith", "Mary Smith"});
+        assertNotNull(building.getInitialResidents());
+    }
+
+    @Test
+    public void residentsShouldIncludeInitialResident()
+    {
+        Building building = new Building(1, "John Smith");
+        assertNotNull(building.getResidents());
+    }
 }
