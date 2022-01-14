@@ -12,6 +12,7 @@ package at.htlleonding;
 
 public class Building {
     Integer id;
+    String initialResident;
 
     public Building(Integer id) {
         this.id = id;
@@ -19,5 +20,9 @@ public class Building {
 
     public Integer getId() {
         return id;
+    }
+
+    public String getInitialResident() {
+        return initialResident;
     }
 }

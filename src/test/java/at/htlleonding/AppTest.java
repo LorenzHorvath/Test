@@ -18,4 +18,11 @@ public class AppTest
         Building building = new Building(1);
         assertNotNull(building.getId());
     }
+
+    @Test
+    public void shouldHaveAnInitialResident()
+    {
+        Building building = new Building(1);
+        assertNotNull(building.getInitialResident());
+    }
 }
