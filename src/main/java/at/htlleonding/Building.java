@@ -33,7 +33,7 @@ public class Building {
     }
 
     public void addResident(String resident) {
-
+        residents.add(resident);
     }
 
     public Integer getId() {
