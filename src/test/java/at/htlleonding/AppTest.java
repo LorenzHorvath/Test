@@ -15,14 +15,14 @@ public class AppTest
     @Test
     public void shouldHaveAnId()
     {
-        Building building = new Building(1);
+        Building building = new Building(1, null);
         assertNotNull(building.getId());
     }
 
     @Test
     public void shouldHaveAnInitialResident()
     {
-        Building building = new Building(1);
+        Building building = new Building(1, "John Smith");
         assertNotNull(building.getInitialResident());
     }
 }

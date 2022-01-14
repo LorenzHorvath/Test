@@ -14,8 +14,9 @@ public class Building {
     Integer id;
     String initialResident;
 
-    public Building(Integer id) {
+    public Building(Integer id, String initialResident) {
         this.id = id;
+        this.initialResident = initialResident;
     }
 
     public Integer getId() {
