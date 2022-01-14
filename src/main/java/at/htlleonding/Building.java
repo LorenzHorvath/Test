@@ -37,7 +37,7 @@ public class Building {
     }
 
     public void removeResident(String resident) {
-
+        residents.remove(resident);
     }
 
         public Integer getId() {
