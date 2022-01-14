@@ -46,4 +46,12 @@ public class AppTest
         Building building = new Building(1, "John Smith");
         assertTrue(building.getResidents().contains("John Smith"));
     }
+
+    @Test
+    public void residentsShouldIncludeInitialResidents()
+    {
+        Building building = new Building(1, new String[]{"John Smith", "Mary Smith"});
+        assertTrue(building.getResidents().contains("John Smith"));
+        assertTrue(building.getResidents().contains("Mary Smith"));
+    }
 }
