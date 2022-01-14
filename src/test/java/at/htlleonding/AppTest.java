@@ -15,7 +15,7 @@ public class AppTest
     @Test
     public void shouldHaveAnId()
     {
-        Building building = new Building(1, null);
+        Building building = new Building(1, "");
         assertNotNull(building.getId());
     }
 
@@ -24,5 +24,12 @@ public class AppTest
     {
         Building building = new Building(1, "John Smith");
         assertNotNull(building.getInitialResident());
+    }
+
+    @Test
+    public void shouldHaveInitialResidents()
+    {
+        Building building = new Building(1, "");
+        assertNotNull(building.getInitialResidents());
     }
 }

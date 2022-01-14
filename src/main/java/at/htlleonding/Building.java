@@ -13,10 +13,15 @@ package at.htlleonding;
 public class Building {
     Integer id;
     String initialResident;
+    String[] initialResidents;
 
     public Building(Integer id, String initialResident) {
         this.id = id;
         this.initialResident = initialResident;
+    }
+
+    public Building(Integer id, String[] initialResidents) {
+        this.id = id;
     }
 
     public Integer getId() {
@@ -25,5 +30,9 @@ public class Building {
 
     public String getInitialResident() {
         return initialResident;
+    }
+
+    public String[] getInitialResidents() {
+        return initialResidents;
     }
 }
