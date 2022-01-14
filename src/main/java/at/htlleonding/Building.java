@@ -10,6 +10,7 @@
  */
 package at.htlleonding;
 
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -28,6 +29,7 @@ public class Building {
     public Building(Integer id, String[] initialResidents) {
         this.id = id;
         this.initialResidents = initialResidents;
+        Collections.addAll(residents, initialResidents);
     }
 
     public Integer getId() {
