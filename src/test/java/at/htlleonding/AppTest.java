@@ -29,7 +29,7 @@ public class AppTest
     @Test
     public void shouldHaveInitialResidents()
     {
-        Building building = new Building(1, "");
+        Building building = new Building(1, new String[]{"John Smith", "Mary Smith"});
         assertNotNull(building.getInitialResidents());
     }
 }

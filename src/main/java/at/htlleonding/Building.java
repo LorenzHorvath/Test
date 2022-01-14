@@ -22,6 +22,7 @@ public class Building {
 
     public Building(Integer id, String[] initialResidents) {
         this.id = id;
+        this.initialResidents = initialResidents;
     }
 
     public Integer getId() {
