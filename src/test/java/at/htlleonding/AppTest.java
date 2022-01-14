@@ -4,6 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import java.util.Collections;
+
 /**
  * Unit test for simple App.
  */
@@ -77,5 +79,13 @@ public class AppTest
     {
         Building building = new Building(1, new String[]{"John Smith", "Mary Smith"});
         assertEquals(2, building.getNumberOfResidents());
+    }
+
+    @Test
+    public void shouldntBeAbleToAddExistingResident()
+    {
+        Building building = new Building(1, new String[]{"John Smith", "Mary Smith"});
+        building.addResident("John Smith");
+        assertEquals(1, Collections.frequency(building.getResidents(), "John Smith"));
     }
 }
