@@ -62,4 +62,13 @@ public class AppTest
         building.addResident("David Smith");
         assertTrue(building.getResidents().contains("David Smith"));
     }
+
+    @Test
+    public void residentsShouldRemoveResident()
+    {
+        Building building = new Building(1, new String[]{"John Smith", "Mary Smith"});
+        building.addResident("David Smith");
+        building.removeResident("David Smith");
+        assertFalse(building.getResidents().contains("David Smith"));
+    }
 }

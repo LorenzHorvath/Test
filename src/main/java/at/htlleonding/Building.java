@@ -36,7 +36,11 @@ public class Building {
         residents.add(resident);
     }
 
-    public Integer getId() {
+    public void removeResident(String resident) {
+
+    }
+
+        public Integer getId() {
         return id;
     }
 
