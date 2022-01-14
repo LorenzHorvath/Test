@@ -44,6 +44,6 @@ public class AppTest
     public void residentsShouldIncludeInitialResident()
     {
         Building building = new Building(1, "John Smith");
-        assertNotNull(building.getResidents());
+        assertTrue(building.getResidents().contains("John Smith"));
     }
 }
