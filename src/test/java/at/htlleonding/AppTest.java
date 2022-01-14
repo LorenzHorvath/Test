@@ -71,4 +71,11 @@ public class AppTest
         building.removeResident("David Smith");
         assertFalse(building.getResidents().contains("David Smith"));
     }
+
+    @Test
+    public void numberOfResidentsShouldBe2With2InitialResidents()
+    {
+        Building building = new Building(1, new String[]{"John Smith", "Mary Smith"});
+        assertEquals(2, building.getNumberOfResidents());
+    }
 }

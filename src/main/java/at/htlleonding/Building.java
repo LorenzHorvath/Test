@@ -40,7 +40,11 @@ public class Building {
         residents.remove(resident);
     }
 
-        public Integer getId() {
+    public int getNumberOfResidents() {
+        return 0;
+    }
+
+    public Integer getId() {
         return id;
     }
 
