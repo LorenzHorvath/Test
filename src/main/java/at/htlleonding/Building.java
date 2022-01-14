@@ -33,7 +33,9 @@ public class Building {
     }
 
     public void addResident(String resident) {
-        residents.add(resident);
+        if (!residents.contains(resident)) {
+            residents.add(resident);
+        }
     }
 
     public void removeResident(String resident) {
